@@ -1,0 +1,40 @@
+#nagłówek{
+    width: auto;
+    margin: 5px;
+    margin-left: 60%;
+    color: dodgerblue;
+    font-size: 900%;
+    font-family: 'Teko', sans-serif;
+}
+
+body{
+    background-color: lightblue; 
+}
+.klikacz {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    font-size: 240%;
+    background-color: #14de5e;
+    border: 3px solid black;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0,0.5);
+    transition: all 0.4s ease-out;
+    
+}
+
+.klikacz:hover {
+    background-color: crimson;
+    color: floralwhite;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: blue;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;;
+}
