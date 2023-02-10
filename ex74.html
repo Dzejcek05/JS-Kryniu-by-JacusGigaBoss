@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let liczba1 = parseFloat(prompt("Podaj pierwsza liczbe:"));
+        let liczba2 = parseFloat(prompt("Podaj druga liczbe:"));
+        let wp; //wartość początkowa
+        if(liczba1 >= 20 && liczba1 <=60){
+            if(liczba2 >= 20 && liczba2 <=60){
+                wp = parseInt(prompt("Podaj wartosc poczatkowa:"));
+                if(liczba1>liczba2){
+                    for(i=wp;i<=100;i=i+5)
+                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+"Jacek Kaim"+"<br></p>");
+                }
+                else{
+                    for(i=wp;i>0;i=i-5)
+                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+"Jacek Kaim"+"<br></p>");
+                }
+            }
+            else{
+                document.write(`Liczba ${liczba2} nie miesci się w przedziale <20;60>`);
+            } 
+        }
+        else{
+            document.write(`Liczba ${liczba1} nie miesci się w przedziale <20;60>`);
+        }
+    </script>
+</body>
+</html>

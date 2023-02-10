@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function czwartegostopnia(value, degree) {
+            return Math.pow(value, 1.0 / degree);
+        }
+        document.write("Liczby pierwsze"+"<br>");
+        for(let i=2; i<=12+15;i++){
+            document.write(`I=${i}`+"&nbsp"+`pierwiastek2(${i})=`+ Math.sqrt(i).toFixed(2)+"&nbsp&nbsp&nbsp&nbsp"+`pierwiastek4(${i})=`+czwartegostopnia(i,4).toFixed(2)+"<br>");
+        }
+    </script>
+</body>
+</html>
